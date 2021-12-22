@@ -1,0 +1,25 @@
+<h3 class="text-center">Cadastrar Contas</h3>
+<br>
+<div class="container w-50">
+  <div class="col">
+      <form>
+          <div class="mb-2">
+              <label class="form-label">Nome do cliente:</label>
+              <input [(ngModel)]="conta.nomeCliente" type="text" class="form-control" name="nome">
+          </div>
+          <div class="mb-2">
+              <label class="form-label">Valor:</label>
+              <input [(ngModel)]="conta.valor" type="text" class="form-control" name="valor">
+          </div>
+          <div class="mb-2">
+            <label class="form-label">Número da conta:</label>
+            <input [(ngModel)]="conta.contaCliente"type="text" class="form-control" name="conta">
+        </div>
+          <div class="mt-5 mb-5">
+              <button (click)='adicionar()' class="btn1">Adicionar</button>
+
+          </div>
+      </form>
+  </div>
+</div>
+
